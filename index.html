@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generic Dessert Restaurant</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <!--CSS begins here-->
+    <style>
+
+      header{
+        background-color: orange;
+      }
+
+      section{
+        background-color: #E1E1E1;
+      }
+
+      nav{
+        /*Formatting the navbar*/
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li{
+        /*Navbar floats to the left of the screen*/
+        float: left;
+      }
+
+      li a{
+        /*Decorating the navbar options*/
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active){
+        /*Not sure what this does*/
+        background-color: green;
+      }
+
+      a:hover{
+        /*When you hover over navbar options, they change colour*/
+        background-color: #E1E1E1;
+        color: black;
+      }
+
+      .active{
+        background-color: black;
+      }
+
+      h1{
+        /*The title can stay black to stand out*/
+        color: black; 
+        text-align: center;
+        padding-bottom: 25px;
+        font-family: "Snell Roundhand", cursive;
+        font-size: 55px;
+      }
+
+      .logo{
+        margin-left: 20px;
+        border-radius: 50%;
+      }
+
+      .logo:hover{
+        /*Cursor appearance changes when it hovers over the logo*/
+        cursor: help;
+      }
+
+      h2{
+        /*Formatting of h2 text*/
+        color: black;
+        text-align: center;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-family: "Helvetica", sans-serif;
+      }
+
+      .ad1{
+        /*Positioning of the image that will have text within*/
+        /*Assigning text relative to the image*/
+        position: relative;
+        text-align: center;
+        color: black;
+      }
+
+      .top-left{
+        /*Positoning the text within the image*/
+        position: absolute;
+        top: 8px;
+        left: 16px;
+      }
+
+      p{
+        /*Font decoration for paragraph tagged text*/
+        color: black;
+        font-family: "Helvetica", sans-serif;
+        padding-left: 50px;
+      }
+
+      footer{
+        background-color: orange;
+      }
+
+      .references{
+        /*Formatting the footer references*/
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+
+    </style>
+  </head>
+
+
+  <body>
+    <header>
+      <!--Navigation-->
+      <nav>
+        <!--Use links to other html files in the same doc to make additional pages on one website-->
+        <!--Inline styling is used here to make the present page appear orange in the navbar-->
+        <li><a style="background-color:orange" class="active" href=index.html>Homepage</a></li> 
+        <li><a class="active" href=menu.html>Full Menu</a></li>  
+        <li><a class="active" href=about.html>About us</a></li> 
+      </nav>
+      <h1>
+        <!--Title-->
+        <b> <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/0/00/The_Child_aka_Baby_Yoda_%28Star_Wars%29.jpg" alt="Logo" style="float:left;width:55px;height:55px;"> Dessert Restaurant</b>
+        
+      </h1>
+    </header>
+
+    <section>
+      <h2><i>Clever double entendre about food</i></h2>
+      <hr>
+      <div class="ad1">
+        <img src="https://www.crepedelicious.com/wp-content/uploads/2019/03/interesting-facts-to-know-about-crepes-3.jpg" alt="Crepes" style="width:100%;">
+        <div class="top-left">Try our <i>new dessert</i></div>
+      </div>
+      
+      <br><p>Made with <i>abstract ingredients</i></p> 
+      <p>*Another advertisement*</p>
+      
+    </section>
+
+    <footer>
+      <div class="references">
+        <li><a class="active" href="https://www.instagram.com/rayyan_aamir23/">Contacts</a></li>
+        <li><a class="active" href="https://en.wikipedia.org/wiki/Cookie">Cookies</a></li>
+      </div>
+    </footer>
+
+  </body>
+</html>

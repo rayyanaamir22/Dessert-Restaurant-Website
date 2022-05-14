@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My own website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      header{
+        background-color: orange;
+      }
+      
+      nav{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li{
+        float: left;
+      }
+
+      li a{
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active){
+        background-color: green;
+      }
+
+      .active{
+        background-color: black;
+      }
+
+      a:hover{
+        background-color: #E1E1E1;
+        color: black;
+      }
+
+      h1{
+        text-align: center;
+        background-color: orange;
+        padding-bottom: 25px;
+        font-family: "Snell Roundhand", cursive;
+        font-size: 40px;
+      }
+
+      h2{
+        padding-left: 15px;
+        padding-top: 20px;
+        background-color: black;
+        overflow: hidden;
+        font-family: "Snell Roundhand", cursive;
+      }
+
+      h2 a{
+        display: block;
+        color: white;
+        padding: 8px 10px;
+        text-decoration: none;
+      }
+
+      .references{
+        /*Formatting the footer references*/
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <!--Navigation-->
+      <nav>
+        <!--Use links to other html files in the same doc to make additional pages on one website-->
+        <li><a class="active" href=index.html>Homepage</a></li>  
+        <li><a style="background-color:orange" class="active" href=menu.html>Full Menu</a></li>  
+        <li><a class="active" href=about.html>About us</a></li> 
+      </nav>
+      <!--Title-->
+      <h1>
+        <b>So Many Options!</b>
+        <!--This is a good place to include an image beside the title-->
+      </h1>
+    </header>
+
+
+
+  </body>
+  <section>
+    <h2>
+      <a href=dishes.html>Main dishes</a> <br>
+      <a href=cakes.html>Cakes</a> <br>
+      <a href=crepes.html>Crepes/Waffles</a> <br>
+      <a href=beverages.html>Beverages</a> <br>
+      <a href=sides.html>Sides</a> <br>
+    </h2>
+    
+
+    <footer>
+      <div class="references">
+        <li><a class="active" href="https://www.instagram.com/rayyan_aamir23/">Contacts</a></li>
+        <li><a class="active" href="https://en.wikipedia.org/wiki/Cookie">Cookies</a></li>
+      </div>
+    </footer>
+
+  </section>
+</html>

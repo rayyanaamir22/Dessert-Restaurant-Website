@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>My own website</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+
+    <style>
+      nav{
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+      li{
+        float: left;
+      }
+
+      li a{
+        display: block;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      li a:hover:not(.active){
+        background-color: green;
+      }
+
+      .active{
+        background-color: black;
+      }
+
+      a:hover{
+        background-color: #E1E1E1;
+        color: black;
+      }
+
+      .references{
+        /*Formatting the footer references*/
+        font-size: 15px;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        overflow: hidden;
+        background-color: #333;
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <header>
+      <!--Navigation-->
+      <nav>
+        <!--Use links to other html files in the same doc to make additional pages on one website-->
+        <li><a class="active" href=index.html>Homepage</a></li>  |
+        <li><a class="active" href=menu.html>Full Menu</a></li>  |
+        <li><a style="background-color:orange" class="active" href=about.html>About us</a></li> 
+      </nav>
+    </header>
+
+
+
+
+    <footer>
+      <div class="references">
+        <li><a class="active" href="https://www.instagram.com/rayyan_aamir23/">Contacts</a></li>
+        <li><a class="active" href="https://en.wikipedia.org/wiki/Cookie">Cookies</a></li>
+      </div>
+    </footer>
+
+  </body>
+</html>
